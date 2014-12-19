@@ -1,28 +1,28 @@
-Django shortcuts
-================
+Django shell shortcuts
+======================
 
-You spend too much time typing ``python manage.py``.
+Django shell shortcuts
 
 Usage
 -----
 
-Django shortcuts installs a ``django`` binary that proxies
+This is a fork of `https://github.com/jgorset/django-shortcuts <https://github.com/jgorset/django-shortcuts>`_.
+
+Django shell shortcuts installs a ``dj`` binary that proxies
 Django's ``manage.py`` and ``django-admin.py`` scripts.
 
 ::
 
-    $ django <command or shortcut>
+    $ dj <command or shortcut>
 
     $ cd any/project/subdirectory
-    $ django <command or shortcut>
+    $ dj <command or shortcut>
 
 Requirements
 ------------
 
 Some commands require additional packages
 
-+ South
-+ Haystack
 + Django Command Extensions
 
 
@@ -33,28 +33,24 @@ Shortcuts
 
     # Django
     'c'  : 'collectstatic',
-    'r'  : 'runserver',
+    's'  : 'runserver',
     'sd' : 'syncdb',
     'sp' : 'startproject',
     'sa' : 'startapp',
     't'  : 'test',
-    
+
     # Shell
     'd'  : 'dbshell',
     's'  : 'shell',
-    
+
     # Auth
     'csu': 'createsuperuser',
     'cpw': 'changepassword',
-    
-    # South
-    'm'  : 'migrate',
+
+    # Migrations
+    'sh'  : 'migrate',
     'sm' : 'schemamigration',
-    
-    # Haystack
-    'ix' : 'update_index',
-    'rix': 'rebuild_index',
-    
+
     # Django Extensions
     'sk' : 'generate_secret_key',
     'rdb': 'reset_db',
@@ -69,4 +65,4 @@ Installation
 
 ::
 
-    $ pip install django-shortcuts
+    $ python setup.py install

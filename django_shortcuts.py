@@ -7,7 +7,7 @@ from subprocess import call
 ALIASES = {
     # Django
     'c'  : 'collectstatic',
-    'r'  : 'runserver',
+    's'  : 'runserver',
     'sd' : 'syncdb',
     'sp' : 'startproject',
     'sa' : 'startapp',
@@ -15,13 +15,13 @@ ALIASES = {
 
     # Shell
     'd'  : 'dbshell',
-    's'  : 'shell',
+    'sh'  : 'shell',
 
     # Auth
     'csu': 'createsuperuser',
     'cpw': 'changepassword',
 
-    # South
+    # Migrations
     'm'  : 'migrate',
     'sm' : 'schemamigration',
     'dm' : 'datamigration',
